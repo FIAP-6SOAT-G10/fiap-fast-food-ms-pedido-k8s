@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-orders
+data:
+  DB_HOST: payment-cluster.c0r9joara2yt.us-east-1.redshift.amazonaws.com
+  DB_NAME: orders
+  MP_NOTIFICATION_URL: http://a02b372ff5cb740f78d7afe989a89690-556733305.us-east-1.elb.amazonaws.com/api/orders/confirmation
