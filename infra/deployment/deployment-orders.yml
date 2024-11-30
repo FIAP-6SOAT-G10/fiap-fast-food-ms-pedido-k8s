@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: orders
-          image: 317575625452.dkr.ecr.us-east-1.amazonaws.com/orders:1.0
+          image: 811851959278.dkr.ecr.us-east-1.amazonaws.com/orders:1.0
           imagePullPolicy: Always
           env:
             - name: DB_USERNAME
@@ -29,11 +29,6 @@ spec:
                 secretKeyRef:
                   name: secret-orders
                   key: DB_PASSWORD
-            - name: MP_ACCESS_TOKEN
-              valueFrom:
-                secretKeyRef:
-                  name: secret-orders
-                  key: MP_ACCESS_TOKEN
           envFrom:
             - configMapRef:
                 name: cm-orders
