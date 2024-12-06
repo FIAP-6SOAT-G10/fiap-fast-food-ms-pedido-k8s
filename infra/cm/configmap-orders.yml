@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: cm-orders
 data:
-  DB_HOST: fiap-cluster.xuj7z.mongodb.net
+  DB_HOST: fiap-cluster.ktsaa.mongodb.net
   CUSTOMER_HOST: svc-customer
   PRODUCT_HOST: svc-produto
